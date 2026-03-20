@@ -25,60 +25,13 @@ export const Home = () => {
       gap-6 lg:gap-10
     "
   >
-    {/* Logo Section */}
-    <div
-      className="
-        w-full lg:w-1/2
-        rounded-2xl shadow-2xl
-      "
-    >
-      <img
-        src={logo}
-        alt="logo"
-        className="w-full h-auto"
-      />
+    <div className="w-full h-screen">
+      <div className="flex justify-center items-center w-full h-full">
+        <h1 className="text-4xl font-bold text-white">TieVista in Progress, Coming Soon!</h1>
+      </div>
     </div>
-
-    {/* Swiper Section */}
-    <div
-      className="
-        flex
-        w-full lg:w-1/2
-        justify-center
-        items-center
-      "
-    >
-      <Swiper
-        modules={[Autoplay]}
-        spaceBetween={20}
-        slidesPerView={1}
-        loop={true}
-        autoplay={{
-          delay: 1500,
-          disableOnInteraction: false,
-        }}
-        className="w-full"
-      >
-        <SwiperSlide className="bg-gray-200 p-6 sm:p-10 rounded-xl text-center">
-          <img className="w-full h-64 sm:h-170 object-cover" src={s1} alt="" />
-        </SwiperSlide>
-
-        <SwiperSlide className="bg-gray-200 p-6 sm:p-10 rounded-xl text-center">
-          <img className="w-full h-64 sm:h-170 object-cover" src={s2} alt="" />
-        </SwiperSlide>
-
-        <SwiperSlide className="bg-gray-200 p-6 sm:p-10 rounded-xl text-center">
-          <img className="w-full h-64 sm:h-170 object-cover" src={s3} alt="" />
-        </SwiperSlide>
-
-        <SwiperSlide className="bg-gray-200 p-6 sm:p-10 rounded-xl text-center">
-          <img className="w-full h-64 sm:h-170 object-cover" src={s4} alt="" />
-        </SwiperSlide>
-      </Swiper>
     </div>
-  </div>
-</div>
-
+    </div>
 
     );
 };
